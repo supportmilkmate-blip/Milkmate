@@ -1,0 +1,80 @@
+{
+  "entities": {
+    "Business": {
+      "path": "businesses/{businessId}",
+      "fields": {
+        "id": "string",
+        "businessName": "string",
+        "ownerName": "string",
+        "ownerUid": "string",
+        "phone": "string",
+        "businessMode": "string",
+        "createdAt": "timestamp"
+      }
+    },
+    "Farmer": {
+      "path": "businesses/{businessId}/farmers/{farmerId}",
+      "fields": {
+        "id": "string",
+        "businessId": "string",
+        "farmerCode": "string",
+        "name": "string",
+        "mobile": "string",
+        "milkType": "string"
+      }
+    },
+    "Customer": {
+      "path": "businesses/{businessId}/customers/{customerId}",
+      "fields": {
+        "id": "string",
+        "businessId": "string",
+        "name": "string",
+        "mobile": "string",
+        "milkType": "string",
+        "outstandingBalance": "number"
+      }
+    },
+    "MilkCollection": {
+      "path": "businesses/{businessId}/collections/{collectionId}",
+      "fields": {
+        "id": "string",
+        "businessId": "string",
+        "farmerId": "string",
+        "farmerName": "string",
+        "shift": "string",
+        "quantityLiters": "number",
+        "fat": "number",
+        "snf": "number",
+        "ratePerLiter": "number",
+        "totalAmount": "number",
+        "dateEpochMidnight": "number"
+      }
+    },
+    "Delivery": {
+      "path": "businesses/{businessId}/deliveries/{deliveryId}",
+      "fields": {
+        "id": "string",
+        "businessId": "string",
+        "customerId": "string",
+        "customerName": "string",
+        "shift": "string",
+        "quantityLiters": "number",
+        "totalAmount": "number",
+        "deliveryDate": "number",
+        "isDelivered": "boolean"
+      }
+    },
+    "Payment": {
+      "path": "businesses/{businessId}/payments/{paymentId}",
+      "fields": {
+        "id": "string",
+        "businessId": "string",
+        "customerId": "string",
+        "customerName": "string",
+        "amount": "number",
+        "paymentType": "string",
+        "date": "number"
+      }
+    }
+  }
+}

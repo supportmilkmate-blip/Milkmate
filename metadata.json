@@ -1,0 +1,8 @@
+{
+  "name": "MilkMate Dairy OS",
+  "description": "Smart Dairy OS for milk collection, delivery tracking, customer khatas, cattle herd management, and cloud synchronization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
